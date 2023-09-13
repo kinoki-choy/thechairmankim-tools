@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(248, 231, 206) !important;
+  font-family: 'Poiret One', cursive;
+  color: #777;
+}
+
+title::after {
+  content: 'Shibui Furniture Collective';
+}
+
+ol {
+  font-family: 'Bellota Text', 'Poiret One';
+  font-size: 2rem;
+}
+
+ol li {
+  list-style: decimal-leading-zero;
+  list-style-position: inside;
+}
+
+h6 {
+  font-family: 'Bellota Text', 'Poiret One';
+  font-size: 1.35rem;
+  margin-top: 30px;
+}
+
+blockquote strong {
+  font-family: 'Bellota Text', 'Poiret One';
+}
+
+p {
+  font-size: 2.2rem;
+}
+
+a {
+  color: #777;
+}
+
+a:hover, a.active {
+  border-bottom: 1px solid #777;
+}
+
+a.shibui:hover, a.shibui.active {
+  border-bottom: none;
+}
+
+span:focus {
+  outline: none;
+}
+
+span.editable {
+  font-size: 2.5rem;
+  display: block;
+  padding: 0 0 0 8px;
+  border-bottom: 1px solid #777;
+}
+
+.logo {
+  margin-top: 7rem;
+}
+
+.logo img {
+  opacity: .55;
+}
+
+.highlight {
+  font-size: 2.5rem;
+  padding: 0 8px;
+  background-color: #ffe359;
+  background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+}
+
+#rake_angle::after,
+#splay_angle::after,
+#resultant_angle::after,
+#sightline::after {
+  content: '\00b0';
+}
+
+#resultant_and_sightline, #emc, #weaved_chair_seat {
+  display: none;
+}
+
+#resultant_and_sightline.active, #emc.active, #weaved_chair_seat.active {
+  display: block;
+  margin: 11rem 0 1rem;
+  padding-bottom: 20px;
+}
+
+#relative_humidity::after, #computed_emc::after {
+  content: '\00025';
+}
+
+#temp_celsius.editable::after {
+  content: '\00b0 C';
+}
+
+#seat_length::after,
+#seat_width::after,
+#seat_thickness::after,
+#tape_width::after,
+#computed_length::after {
+  content: '"';
+}

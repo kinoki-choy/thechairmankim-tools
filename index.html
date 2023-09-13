@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Kim Choy">
+	<meta name="description" content="Finding your angle">
+	<title>Shibui Furniture Collective</title>
+	<link rel="icon" href="https://freight.cargo.site/t/original/i/a000d9d71d575972b7684ccb09addb745a3478ba5eef31926a406232a61c0a24/Shibui-Logomark-even-smaller.ico">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bellota+Text:400i|Poiret+One&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+	<link rel="stylesheet" href="thechairmankim.css">
+</head>
+
+<body>
+	<main class="wrapper">
+		<div class="container">
+			<div class="row">
+
+				<div class="left column">
+					<div class="row">
+						<div class="column column-80 logo">
+							<a class="shibui" href="index.html">
+									<img src="assets/logo.png">
+								</a>
+							<h6>
+									A bunch of useful woodworking tools by <a href="https://www.instagram.com/chairman.kim" target="_blank">@chairman.kim</a> from <a href="https://shibuifurniture.co" target="_blank">Shibui Furniture Collective</a>
+								</h6>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column">
+							<ol id="nav">
+								<li>
+									<a class="nav-item" href="#resultant_and_sightline">Resultant &amp; Sightline Angle</a>
+								</li>
+								<li>
+									<a class="nav-item" href="#emc">Equilibrium Moisture Content</a>
+								</li>
+								<li>
+									<a class="nav-item" href="#weaved_chair_seat">Weaved Chair Seat</a>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<!--./left column-->
+
+				<div class="right column">
+					<div class="row nav-content" id="resultant_and_sightline">
+						<div class="column">
+							<p>
+								Rake angle: <span id="rake_angle" class="editable" contenteditable>18</span>
+								<br> Splay angle: <span id="splay_angle" class="editable" contenteditable>8</span>
+								<br> The resultant angle would be <span id="resultant_angle" class="highlight">19.5</span> and sightline angle would be <span id="sightline" class="highlight">66.6</span>.
+							</p>
+							<blockquote>
+								<strong>Rake:</strong> The angle of a part when viewed from the side of the chair.
+								<br>
+								<strong>Splay:</strong> The angle of a part when viewed from the front view of the chair.
+								<br>
+								<strong>Sightline:</strong> A point of view in which the part appears vertical.
+								<br>
+								<strong>Resultant angle: </strong> The angle of the part when viewed perpendicularly to the sightline.
+							</blockquote>
+							<em>*Above terminology from <a href="https://www.petergalbert.com/" target="_blank">Peter Galbert's</a> <a href="https://lostartpress.com/products/chairmakers-notebook" target="_blank">Chairmaker Notebook, Appendix A</a></em>
+						</div>
+					</div>
+					<div class="row nav-content" id="emc">
+						<div class="column">
+							<p>
+								Temperature: <span id="temp_celsius" class="editable" contenteditable>28</span>
+								<br> Relative Humidity: <span id="relative_humidity" class="editable" contenteditable>70</span>
+								<br> The EMC would be <span id="computed_emc" class="highlight">12.8</span>.
+							</p>
+							<blockquote>
+								<strong>T = </strong>Temperature (C)
+								<br>
+								<strong>H = </strong>Relative Humidity (%) / 100
+								<br>
+								<strong>W = </strong>330 + 0.452T + 0.00415T<sup>2</sup>
+								<br>
+								<strong>K = </strong>0.791 + 0.000463T - 0.000000844T<sup>2</sup>
+								<br>
+								<strong>K<sub>1 = </sub></strong>6.34 + 0.000775T - 0.0000935T<sup>2</sup>
+								<br>
+								<strong>K<sub>2 = </sub></strong>K2 = 1.09 + 0.0284T - 0.0000904T<sup>2</sup>
+								<br>
+								<br>
+								<strong>EMC =</strong> 1800/W [ KH/(1-KH) + (K<sub>1</sub>KH + 2K<sub>1</sub>K<sub>2</sub>K<sup>2</sup>H<sup>2</sup>) / (1<sup> </sup>+ K<sub>1</sub>KH + K<sub>1</sub>K<sub>2</sub>K<sup>2</sup>H<sup>2</sup>)]
+							</blockquote>
+							<em>Equilibrium moisture content (EMC) is the moisture level where the wood neither gains nor loses moisture since it is at equilibrium with the relative humidity and temperature of the surrounding environment.</em>
+						</div>
+					</div>
+
+					<div class="row nav-content" id="weaved_chair_seat">
+						<div class="column">
+							<p>
+								Seat Length: <span id="seat_length" class="editable" contenteditable>15</span>
+								<br> Seat Width: <span id="seat_width" class="editable" contenteditable>12</span>
+								<br> Seat Thickness: <span id="seat_thickness" class="editable" contenteditable>1.5</span>
+								<br> Material Width: <span id="material_width" class="editable" contenteditable>1</span>
+								<br> Total length needed will be <span id="computed_length" class="highlight">789</span>. Remember to factor in excess.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!--./right column-->
+
+			</div>
+			<!-- .row -->
+		</div>
+		<!-- .container -->
+	</main <script src="https://milligram.github.io/scripts/main.js"></script>
+	<script src='lib/modules/thechairmankim.js'></script>
+	<script src='lib/modules/thechairmankim.ui.js'></script>
+</body>
+
+</html>
